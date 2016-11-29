@@ -28,11 +28,12 @@
         </ul>
       </nav>
     <div class='banner'><h1>Meadowvale Music Theatre</h1></div>
+    <div class='wrapper'>
     <h2>Quality entertainment, close to home.</h2>
-    <h3>Coming February 2017</h3>
     <img class='next-show' src='img/catch.jpg' alt='next show'>  
-    <h3>online tickets available July 2016 at <a href='http://encoretix.ca'>encoretix.ca</a></h3>
+      
     <section id='about'>
+        <div class='ticket-button'><a href='http://encoretix.ca'>Tickets</a></div>
         <?php include('inc/about.html'); ?>
     </section>
     <section id='news'>
@@ -50,10 +51,11 @@
     <section id='contact'>
         <?php include('inc/contact.html') ?>
     </section>
-      
+    
     <footer>
         <a href='inc/privacy.html'>Privacy Statement</a>
     </footer>
+    </div> 
     
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>

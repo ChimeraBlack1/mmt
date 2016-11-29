@@ -10,6 +10,7 @@
 }
 
 
+
 a {
     text-decoration: none;
     font-weight: bold;
@@ -27,7 +28,7 @@ nav ul {
 h1 {
     margin-top: 0;
     padding-top: 15px;
-    color: #fff;    
+    color: #fff;
 }
 
 li {
@@ -149,6 +150,24 @@ header {
     background-position: center;
 }
 
+.ticket-button {
+    height: 60px;
+    width: 120px;
+    background-color: red;
+    border-radius: 10px;
+    margin: 10px auto;
+
+}
+
+.ticket-button a {
+    display: block;
+    padding: 0.5rem;
+    padding-top: 1.25rem;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+}
+
 .wrap-sm-1{
     width: 90%;
     margin: 0 auto;
@@ -188,13 +207,38 @@ footer {
 
 
 
-
 /*
     Media Queries
 ===========================
 */
 
 @media (min-width: 968px) {
+    
+    body {
+        background-color: #333;
+    }
+    
+    .wrapper {
+        width: 90%;
+        background-color: #fff;
+        height: 100%;
+        float: left;
+        margin-left: 5%;
+    }
+    
+    
+/*
+    Nav, Header
+===========================
+*/
+    .banner {
+        height: 630px;        
+    }
+    
+    .banner h1 {
+        padding-top: 6rem;
+    }
+    
     .menu-icon {
         display: none;
     }
@@ -225,7 +269,10 @@ footer {
     }
     
     footer {
-        height: 220px;
+        height: 10px;
+        width: 100%;
+        float: left;
+        padding: 2rem 0;
     }
     
     .nav-item {
@@ -235,6 +282,49 @@ footer {
 
     .nav-item a {
         color: rgb(0,0,0);
+    }
+    
+    
+/*
+    content
+===========================
+*/
+    #about {
+        padding-top: 0.5px;
+    }
+    
+    #about p {
+        text-align: justify;
+    }
+    
+    .next-show {
+        width: 50%;
+        margin: 20px;
+        float: left;
+    }
+    
+    .ticket-button {
+        margin-left: 72%;
+        margin-top: 20px;
+    }
+
+    
+/*
+    map, contact
+===========================
+*/
+    #dir {
+        width: 50%;
+        float: left;
+    }
+    
+    #contact {
+        width: 50%;
+        float: left;
+    }
+    
+    .form {
+        padding-top: 5%;
     }
 }
 
