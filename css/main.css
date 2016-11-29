@@ -1,0 +1,241 @@
+/*
+    Base Styles
+==========================
+*/
+
+* {
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0; 
+}
+
+#nav {
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 15px;
+    color: #fff;    
+}
+
+li {
+    text-align: left;
+    margin: 0;
+}
+
+li a {
+    color: #fff;
+}
+
+
+/*
+    Nav, Header, Banner, Footer
+===========================
+*/
+
+header {
+    height: 72px;
+    width: 100%;
+    background-color: rgb(0,0,0);
+    box-shadow: 0px 2px 10px 0px black;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.social-icon {
+    height: 30px;
+    width: 18px;
+    right: 30px;
+    top: 20px;
+    background-image: url('../img/fb-white.png');
+    background-size: cover;
+    position: absolute;
+    z-index: 1000;
+}
+
+.social-icon a {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.nav a {
+    color: #fff;
+}
+
+.nav-closed {
+    padding: 10px;
+    position: relative;
+    top: -100px;
+    height: 0;
+    z-index 100;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-open {
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 100;
+    height: 160px;
+    transition: height 500ms;
+}
+
+.nav-open li {
+    padding-top: 10px;
+}
+
+.menu-icon {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    margin-top: 72px;
+    background-image: url(../img/screenshot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.black-head {
+    font-size: 2em;
+    margin: 0.67em 0;
+    color: black;
+}
+
+
+
+/*
+    Content
+===========================
+*/
+
+.next-show {
+    width: 95%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.next-show2 {
+    width: 95%;
+    margin: 0 auto;
+    height: 300px;
+    background-image: url(../img/catch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap-sm-1{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#map {
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;    
+}
+
+.who, 
+.textbox {
+    display: block;
+    margin: 7.5px auto;
+    width: 70%;
+    text-align: left;
+}
+
+.contact-button{
+    background-color: red;
+    color: #fff;
+    border: 0;
+    padding: 0.5rem 1rem;
+}
+
+.aud-img {
+    height: 200px;
+    width: 100%;
+}
+
+footer {
+    height: 25rem;
+}
+
+
+
+
+/*
+    Media Queries
+===========================
+*/
+
+@media (min-width: 968px) {
+    .menu-icon {
+        display: none;
+    }
+    
+    .nav-closed {
+        top: 0;
+        z-index: 1000;
+        position: fixed;
+    }   
+
+    ul li {
+        display: inline-block;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+    
+    ul {
+        padding-left: 1rem;
+    }
+    
+    li {
+        margin-left: 3rem;
+        margin-top: 30px;
+    }
+    
+    li:first-child {
+        margin-left: 0;
+    }
+    
+    footer {
+        height: 220px;
+    }
+    
+    .nav-item {
+        background-color: #fff;
+        height: 40px;
+    }
+
+    .nav-item a {
+        color: rgb(0,0,0);
+    }
+}
+
+   
